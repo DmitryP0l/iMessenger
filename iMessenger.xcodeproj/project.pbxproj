@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B407842B287EB4B300EB066D /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407842A287EB4B300EB066D /* UILabel + Extension.swift */; };
+		B407842D287EB62300EB066D /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407842C287EB62300EB066D /* UIImageView + Extension.swift */; };
 		B4AC1C87287DA0A6008A057E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C86287DA0A6008A057E /* AppDelegate.swift */; };
 		B4AC1C89287DA0A6008A057E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C88287DA0A6008A057E /* SceneDelegate.swift */; };
-		B4AC1C8B287DA0A6008A057E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C8A287DA0A6008A057E /* ViewController.swift */; };
+		B4AC1C8B287DA0A6008A057E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C8A287DA0A6008A057E /* AuthViewController.swift */; };
 		B4AC1C90287DA0B0008A057E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AC1C8F287DA0B0008A057E /* Assets.xcassets */; };
 		B4AC1C93287DA0B0008A057E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AC1C91287DA0B0008A057E /* LaunchScreen.storyboard */; };
+		B4AD1C4D287EA8AA00FDD255 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD1C4C287EA8AA00FDD255 /* UIButton + Extension.swift */; };
+		B4AD1C4F287EABA400FDD255 /* UIFont  + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD1C4E287EABA400FDD255 /* UIFont  + Extension.swift */; };
+		B4AD1C51287EACE800FDD255 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD1C50287EACE800FDD255 /* UIColor + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B407842A287EB4B300EB066D /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		B407842C287EB62300EB066D /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		B4AC1C83287DA0A6008A057E /* iMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AC1C86287DA0A6008A057E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4AC1C88287DA0A6008A057E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4AC1C8A287DA0A6008A057E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4AC1C8A287DA0A6008A057E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B4AC1C8F287DA0B0008A057E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4AC1C92287DA0B0008A057E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4AC1C94287DA0B0008A057E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AD1C4C287EA8AA00FDD255 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		B4AD1C4E287EABA400FDD255 /* UIFont  + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont  + Extension.swift"; sourceTree = "<group>"; };
+		B4AD1C50287EACE800FDD255 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B407842E287EB84100EB066D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD1C50287EACE800FDD255 /* UIColor + Extension.swift */,
+				B4AD1C4C287EA8AA00FDD255 /* UIButton + Extension.swift */,
+				B407842A287EB4B300EB066D /* UILabel + Extension.swift */,
+				B407842C287EB62300EB066D /* UIImageView + Extension.swift */,
+				B4AD1C4E287EABA400FDD255 /* UIFont  + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B4AC1C7A287DA0A6008A057E = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +78,8 @@
 			children = (
 				B4AC1C86287DA0A6008A057E /* AppDelegate.swift */,
 				B4AC1C88287DA0A6008A057E /* SceneDelegate.swift */,
-				B4AC1C8A287DA0A6008A057E /* ViewController.swift */,
+				B4AC1C8A287DA0A6008A057E /* AuthViewController.swift */,
+				B407842E287EB84100EB066D /* Extensions */,
 				B4AC1C8F287DA0B0008A057E /* Assets.xcassets */,
 				B4AC1C91287DA0B0008A057E /* LaunchScreen.storyboard */,
 				B4AC1C94287DA0B0008A057E /* Info.plist */,
@@ -134,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4AC1C8B287DA0A6008A057E /* ViewController.swift in Sources */,
+				B4AC1C8B287DA0A6008A057E /* AuthViewController.swift in Sources */,
 				B4AC1C87287DA0A6008A057E /* AppDelegate.swift in Sources */,
+				B407842B287EB4B300EB066D /* UILabel + Extension.swift in Sources */,
 				B4AC1C89287DA0A6008A057E /* SceneDelegate.swift in Sources */,
+				B407842D287EB62300EB066D /* UIImageView + Extension.swift in Sources */,
+				B4AD1C51287EACE800FDD255 /* UIColor + Extension.swift in Sources */,
+				B4AD1C4F287EABA400FDD255 /* UIFont  + Extension.swift in Sources */,
+				B4AD1C4D287EA8AA00FDD255 /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
