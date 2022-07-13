@@ -27,14 +27,17 @@ final class AuthViewController: UIViewController {
                                    backgroundColor: .white,
                                    isShadow: true)
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         logoImageView.tintColor = #colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1)
         setupConstraints()
     }
+}
 
+// MARK: - setup Constraints
+
+extension AuthViewController {
     private func setupConstraints() {
         
         let googleView = ButtonFormView(label: googleLabel, button: googleAuthButton)
@@ -57,15 +60,8 @@ final class AuthViewController: UIViewController {
         stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
-        
     }
-
 }
-
-
-
-
-
 
 // MARK: - SwiftUI
 import SwiftUI

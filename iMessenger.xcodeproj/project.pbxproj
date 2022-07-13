@@ -11,6 +11,8 @@
 		B407842D287EB62300EB066D /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B407842C287EB62300EB066D /* UIImageView + Extension.swift */; };
 		B4078432287EBC0100EB066D /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4078431287EBC0100EB066D /* ButtonFormView.swift */; };
 		B4078434287EC79F00EB066D /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4078433287EC79F00EB066D /* StackView + Extension.swift */; };
+		B4078436287EEBED00EB066D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4078435287EEBED00EB066D /* SignUpViewController.swift */; };
+		B4078438287EEFDA00EB066D /* TextFIeldOneLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4078437287EEFDA00EB066D /* TextFIeldOneLine.swift */; };
 		B4AC1C87287DA0A6008A057E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C86287DA0A6008A057E /* AppDelegate.swift */; };
 		B4AC1C89287DA0A6008A057E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C88287DA0A6008A057E /* SceneDelegate.swift */; };
 		B4AC1C8B287DA0A6008A057E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C8A287DA0A6008A057E /* AuthViewController.swift */; };
@@ -26,6 +28,8 @@
 		B407842C287EB62300EB066D /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		B4078431287EBC0100EB066D /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		B4078433287EC79F00EB066D /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
+		B4078435287EEBED00EB066D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B4078437287EEFDA00EB066D /* TextFIeldOneLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFIeldOneLine.swift; sourceTree = "<group>"; };
 		B4AC1C83287DA0A6008A057E /* iMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AC1C86287DA0A6008A057E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4AC1C88287DA0A6008A057E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				B4078431287EBC0100EB066D /* ButtonFormView.swift */,
+				B4078437287EEFDA00EB066D /* TextFIeldOneLine.swift */,
 				B407842F287EB8F500EB066D /* UIKit */,
 			);
 			path = Extensions;
@@ -103,6 +108,7 @@
 			children = (
 				B4078430287EB93700EB066D /* Support Files */,
 				B4AC1C8A287DA0A6008A057E /* AuthViewController.swift */,
+				B4078435287EEBED00EB066D /* SignUpViewController.swift */,
 				B407842E287EB84100EB066D /* Extensions */,
 				B4AC1C94287DA0B0008A057E /* Info.plist */,
 			);
@@ -179,6 +185,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4078438287EEFDA00EB066D /* TextFIeldOneLine.swift in Sources */,
+				B4078436287EEBED00EB066D /* SignUpViewController.swift in Sources */,
 				B4AC1C8B287DA0A6008A057E /* AuthViewController.swift in Sources */,
 				B4AC1C87287DA0A6008A057E /* AppDelegate.swift in Sources */,
 				B407842B287EB4B300EB066D /* UILabel + Extension.swift in Sources */,
