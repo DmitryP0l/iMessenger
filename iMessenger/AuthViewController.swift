@@ -21,7 +21,7 @@ final class AuthViewController: UIViewController {
                                     isShadow: true)
     private let emailAuthButton = UIButton(title: "Email",
                                    titleColor: .white,
-                                   backgroundColor: .buttonBlackColor)
+                                   backgroundColor: .buttonBlackColor())
     private let loginAuthButton = UIButton(title: "Login",
                                    titleColor: .buttonRedColor(),
                                    backgroundColor: .white,
@@ -30,9 +30,35 @@ final class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .mainWhiteColor()
+        view.backgroundColor = .white
+        logoImageView.tintColor = #colorLiteral(red: 0.5741485357, green: 0.5741624236, blue: 0.574154973, alpha: 1)
+        setupConstraints()
     }
 
+    private func setupConstraints() {
+        
+        let googleView = ButtonFormView(label: googleLabel, button: googleAuthButton)
+        let emailView = ButtonFormView(label: emailLabel, button: emailAuthButton)
+        let loginView = ButtonFormView(label: alreadyOnboardLabel, button: loginAuthButton)
+        
+        let stackView = UIStackView(arrangedSubviews: [googleView, emailView, loginView], axis: .vertical, spacing: 40)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(logoImageView)
+        view.addSubview(stackView)
+        
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        logoImageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        logoImageView.widthAnchor.constraint(equalToConstant: 160).isActive = true
+        logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160).isActive = true
+        logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
+        
+    }
 
 }
 

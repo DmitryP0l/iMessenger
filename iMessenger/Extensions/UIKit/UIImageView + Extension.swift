@@ -5,7 +5,6 @@
 //  Created by lion on 13.07.22.
 //
 
-import Foundation
 import UIKit
 
 extension UIImageView {
