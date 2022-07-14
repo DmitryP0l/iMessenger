@@ -9,27 +9,27 @@ import UIKit
 
 final class SignUpViewController: UIViewController {
     
-    let welcomeLabel = UILabel(text: "God to see you", font: .avenir26())
-    let emailLabel = UILabel(text: "Email")
-    let passwordLabel = UILabel(text: "Password")
-    let confirmPasswordLabel = UILabel(text: "Confirm password")
-    let alreadyOnBoardLabel = UILabel(text: "Already onboard?")
+    private let welcomeLabel = UILabel(text: "God to see you!", font: .avenir26())
+    private let emailLabel = UILabel(text: "Email")
+    private let passwordLabel = UILabel(text: "Password")
+    private let confirmPasswordLabel = UILabel(text: "Confirm password")
+    private let alreadyOnBoardLabel = UILabel(text: "Already onboard?")
     
-    let emailTextField = TextFIeldOneLine(font: .avenir20())
-    let passwordTextField = TextFIeldOneLine(font: .avenir20())
-    let confirmPasswordTextField = TextFIeldOneLine(font: .avenir20())
+    private let emailTextField = TextFIeldOneLine(font: .avenir20())
+    private let passwordTextField = TextFIeldOneLine(font: .avenir20())
+    private let confirmPasswordTextField = TextFIeldOneLine(font: .avenir20())
     
-    let signUpButton = UIButton(title: "Sign Up",
+    private let signUpButton = UIButton(title: "Sign Up",
                                 titleColor: .white,
                                 backgroundColor: .buttonBlackColor(),
                                 cornerRadius: 4)
     
-    let loginButton: UIButton = {
+    private let loginButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
         button.setTitleColor(UIColor.buttonRedColor(), for: .normal)
         button.titleLabel?.font = UIFont.avenir20()
-        
+        button.contentHorizontalAlignment = .leading
         return button
     }()
     
@@ -66,7 +66,7 @@ extension SignUpViewController {
         
         signUpButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
-        let centrStackView = UIStackView(arrangedSubviews: [
+        let centralStackView = UIStackView(arrangedSubviews: [
             emailStackView,
             passwordStackView,
             confirmPasswordStackView,
@@ -80,24 +80,25 @@ extension SignUpViewController {
             loginButton
         ],
                                           axis: .horizontal,
-                                          spacing: -1)
+                                          spacing: 10)
+        bottomStackView.alignment = .firstBaseline
         
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
-        centrStackView.translatesAutoresizingMaskIntoConstraints = false
+        centralStackView.translatesAutoresizingMaskIntoConstraints = false
         bottomStackView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(welcomeLabel)
-        view.addSubview(centrStackView)
+        view.addSubview(centralStackView)
         view.addSubview(bottomStackView)
         
         welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 160).isActive = true
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
-        centrStackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 160).isActive = true
-        centrStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
-        centrStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
+        centralStackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 160).isActive = true
+        centralStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
+        centralStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
         
-        bottomStackView.topAnchor.constraint(equalTo: centrStackView.bottomAnchor, constant: 60).isActive = true
+        bottomStackView.topAnchor.constraint(equalTo: centralStackView.bottomAnchor, constant: 60).isActive = true
         bottomStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
         bottomStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
         
