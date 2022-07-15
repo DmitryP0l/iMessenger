@@ -28,4 +28,14 @@ extension UIButton {
             self.layer.shadowOffset = CGSize(width: 0, height: 4)
         }
     }
+    
+    func customizeIconButton(image: UIImage? = UIImage(systemName: "exclamationmark.circle"), color: UIColor = .black) {
+        let logo = UIImageView(image: image , contentMode: .scaleAspectFit)
+        logo.tintColor = color
+        logo.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(logo)
+        logo.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 24).isActive = true
+        logo.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+    }
 }
+//UIImage(systemName: "g.circle")
