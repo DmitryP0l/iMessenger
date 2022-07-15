@@ -25,7 +25,7 @@ final class SignUpViewController: UIViewController {
                                 cornerRadius: 4)
     
     private let loginButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("Login", for: .normal)
         button.setTitleColor(UIColor.buttonRedColor(), for: .normal)
         button.titleLabel?.font = UIFont.avenir20()

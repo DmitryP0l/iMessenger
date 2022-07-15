@@ -19,11 +19,11 @@ final class LoginViewController: UIViewController {
     private let googleButton = UIButton(title: "Google", titleColor: .black, backgroundColor: .white, isShadow: true)
     private let loginButton = UIButton(title: "Login", titleColor: .white, backgroundColor: .buttonBlackColor())
     private let signUpButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("Sign up", for: .normal)
         button.setTitleColor(UIColor.buttonRedColor(), for: .normal)
         button.titleLabel?.font = UIFont.avenir20()
-        button.contentHorizontalAlignment = .leading
+//        button.contentHorizontalAlignment = .leading
         return button
     }()
     
@@ -41,7 +41,7 @@ extension LoginViewController {
     
     private func setupConstrains() {
         
-        let loginWithView = ButtonFormView(label: welcomeLabel, button: googleButton)
+        let loginWithView = ButtonFormView(label: loginWithLabel, button: googleButton)
         
         let emailStackView = UIStackView(arrangedSubviews: [emailLabel, emailTextField],
                                          axis: .vertical,
@@ -84,7 +84,7 @@ extension LoginViewController {
         ])
         
         NSLayoutConstraint.activate([
-            centralStackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 160),
+            centralStackView.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 80),
             centralStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             centralStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])

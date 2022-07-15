@@ -10,7 +10,9 @@ import UIKit
 final class ButtonFormView: UIView {
     
     init(label: UILabel, button: UIButton) {
+        
         super.init(frame: .zero)
+        
         self.translatesAutoresizingMaskIntoConstraints = false
         label.translatesAutoresizingMaskIntoConstraints = false
         button.translatesAutoresizingMaskIntoConstraints = false
