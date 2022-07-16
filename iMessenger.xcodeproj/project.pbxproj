@@ -16,6 +16,7 @@
 		B4A90389287F001500FE87CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A90388287F001500FE87CE /* LoginViewController.swift */; };
 		B4A9038B28818D6900FE87CE /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9038A28818D6900FE87CE /* SetupProfileViewController.swift */; };
 		B4A9038D2881927400FE87CE /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9038C2881927400FE87CE /* AddPhotoView.swift */; };
+		B4A9038F2881EC0800FE87CE /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9038E2881EC0800FE87CE /* SegmentedControl + Extension.swift */; };
 		B4AC1C87287DA0A6008A057E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C86287DA0A6008A057E /* AppDelegate.swift */; };
 		B4AC1C89287DA0A6008A057E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C88287DA0A6008A057E /* SceneDelegate.swift */; };
 		B4AC1C8B287DA0A6008A057E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AC1C8A287DA0A6008A057E /* AuthViewController.swift */; };
@@ -36,6 +37,7 @@
 		B4A90388287F001500FE87CE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4A9038A28818D6900FE87CE /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		B4A9038C2881927400FE87CE /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		B4A9038E2881EC0800FE87CE /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		B4AC1C83287DA0A6008A057E /* iMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AC1C86287DA0A6008A057E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4AC1C88287DA0A6008A057E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B4AD1C50287EACE800FDD255 /* UIColor + Extension.swift */,
+				B4A9038E2881EC0800FE87CE /* SegmentedControl + Extension.swift */,
 				B4AD1C4C287EA8AA00FDD255 /* UIButton + Extension.swift */,
 				B4078433287EC79F00EB066D /* StackView + Extension.swift */,
 				B407842A287EB4B300EB066D /* UILabel + Extension.swift */,
@@ -204,6 +207,7 @@
 				B4A9038D2881927400FE87CE /* AddPhotoView.swift in Sources */,
 				B4AC1C89287DA0A6008A057E /* SceneDelegate.swift in Sources */,
 				B407842D287EB62300EB066D /* UIImageView + Extension.swift in Sources */,
+				B4A9038F2881EC0800FE87CE /* SegmentedControl + Extension.swift in Sources */,
 				B4AD1C51287EACE800FDD255 /* UIColor + Extension.swift in Sources */,
 				B4AD1C4F287EABA400FDD255 /* UIFont  + Extension.swift in Sources */,
 				B4AD1C4D287EA8AA00FDD255 /* UIButton + Extension.swift in Sources */,
