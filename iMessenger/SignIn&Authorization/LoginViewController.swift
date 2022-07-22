@@ -33,8 +33,14 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        googleButton.customizeIconButton(image: UIImage(systemName: "g.circle.fill"))
+        setupButtonImage()
         setupConstrains()
+    }
+    
+    private func setupButtonImage() {
+        let googleImageConfiguration = UIImage.SymbolConfiguration(pointSize: 30, weight: .light)
+        let googleImage = UIImage(systemName: "g.circle.fill", withConfiguration: googleImageConfiguration)
+        googleButton.customizeIconButton(image: googleImage)
     }
 }
 
