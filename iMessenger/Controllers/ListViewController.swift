@@ -13,8 +13,8 @@ final class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         setupCollectionView()
+        setupSearchBar()
     }
     
     private func setupCollectionView() {
@@ -27,6 +27,17 @@ final class ListViewController: UIViewController {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
         collectionView.delegate = self
         collectionView.dataSource = self
+    }
+    
+    private func setupSearchBar() {
+        navigationController?.navigationBar.barTintColor = .mainWhiteColor()
+        navigationController?.navigationBar.shadowImage = UIImage()
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
     }
 }
 
@@ -42,11 +53,15 @@ extension ListViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.backgroundColor = .red
         return cell
     }
-    
-    
-    
 }
 
+//MARK: - UISearchBarDelegate
+
+extension ListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+    }
+}
 
 //MARK: - SwiftUI
 
@@ -59,7 +74,7 @@ struct ListVCProvider: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         
-        let viewController = ListViewController()
+        let viewController = MainTabBarController()
         
         func makeUIViewController(context: Context) -> some UIViewController {
             return viewController
