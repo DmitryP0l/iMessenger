@@ -21,12 +21,21 @@ final class ListViewController: UIViewController {
         collectionView = UICollectionView(frame: view.bounds,
                                           collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .mainWhiteColor()
         view.addSubview(collectionView)
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
         collectionView.delegate = self
         collectionView.dataSource = self
+    }
+    
+    private func createComositionalLayout() -> UICollectionViewLayout {
+        let layout = UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
+            //вложенность section -> groups -> items
+            //настройка size items -> size groups -> size section + oтельно header
+            <#code#>
+        }
+        return layout
     }
     
     private func setupSearchBar() {
@@ -50,7 +59,7 @@ extension ListViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellID", for: indexPath)
-        cell.backgroundColor = .red
+        cell.backgroundColor = .white
         return cell
     }
 }
@@ -62,6 +71,7 @@ extension ListViewController: UISearchBarDelegate {
         print(searchText)
     }
 }
+
 
 //MARK: - SwiftUI
 

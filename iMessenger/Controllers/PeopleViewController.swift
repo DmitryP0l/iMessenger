@@ -12,7 +12,7 @@ final class PeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSearchBar()
-        view.backgroundColor = .orange
+        view.backgroundColor = .mainWhiteColor()
     }
     
     private func setupSearchBar() {
@@ -34,6 +34,7 @@ extension PeopleViewController: UISearchBarDelegate {
         print(searchText)
     }
 }
+
 
 //MARK: - SwiftUI
 

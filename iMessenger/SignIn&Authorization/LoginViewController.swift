@@ -9,6 +9,7 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
+    
     private let welcomeLabel = UILabel(text: "Welcome back!", font: .avenir26())
     private let loginWithLabel = UILabel(text: "Login with")
     private let orLabel = UILabel(text: "or")
@@ -41,6 +42,7 @@ final class LoginViewController: UIViewController {
         let googleImageConfiguration = UIImage.SymbolConfiguration(pointSize: 30, weight: .light)
         let googleImage = UIImage(systemName: "g.circle.fill", withConfiguration: googleImageConfiguration)
         googleButton.customizeIconButton(image: googleImage)
+        
     }
 }
 
