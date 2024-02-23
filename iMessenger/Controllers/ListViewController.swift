@@ -29,14 +29,14 @@ final class ListViewController: UIViewController {
         collectionView.dataSource = self
     }
     
-    private func createComositionalLayout() -> UICollectionViewLayout {
-        let layout = UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
-            //вложенность section -> groups -> items
-            //настройка size items -> size groups -> size section + oтельно header
-            <#code#>
-        }
-        return layout
-    }
+//    private func createComositionalLayout() -> UICollectionViewLayout {
+//        let layout = UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
+//            //вложенность section -> groups -> items
+//            //настройка size items -> size groups -> size section + oтельно header
+//
+//        }
+//        return layout
+//    }
     
     private func setupSearchBar() {
         navigationController?.navigationBar.barTintColor = .mainWhiteColor()
